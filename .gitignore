@@ -4,7 +4,6 @@
 
 # Node
 node_modules
-.parcel-cache
 
 # MacOS
 .DS_Store
@@ -13,3 +12,4 @@ node_modules
 backstop_data
 dist
 .cache
+.parcel-cache
