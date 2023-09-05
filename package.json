@@ -6,12 +6,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel",
-    "build": "npx parcel src/index.html",
+    "start": "parcel src/index.html --open",
     "lint": "eslint src/scripts/**/*.js --ignore-path .gitignore",
-    "style": "stylelint src/styles/**/*.scss",
-    "format": "prettier --write . --ignore-path .gitignore",
-    "fix-style": "npm run format && npm run style && npm run lint -- --fix",
+    "lint:html": "linthtml src/**/*.html",
+    "style": "stylelint src/styles/**/*.scss --ignore-path .gitignore",
+    "format": "prettier --write . --ignore-path .gitignore --ignore-path .prettierignore",
+    "fix-style": "npm run format && npm run style && npm run lint:html && npm run lint -- --fix",
     "prepare": "husky install"
   },
   "author": "Maksym Nemera",
@@ -22,6 +22,7 @@
     "eslint": "^8.48.0",
     "eslint-plugin-html": "^7.1.0",
     "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "parcel": "^2.9.3",
     "prettier": "^3.0.3",
@@ -37,6 +38,7 @@
   "lint-staged": {
     "*.{js,css,scss,html}": "npm run format",
     "*.{js,jsx}": "npm run lint",
-    "*.{css,scss}": "npm run style"
+    "*.{css,scss}": "npm run style",
+    "*.html": "npm run lint:html"
   }
 }

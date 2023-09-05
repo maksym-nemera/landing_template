@@ -10,6 +10,7 @@
   "jsxSingleQuote": true,
   "jsxBracketSameLine": true,
   "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "ignore",
   "overrides": [
     {
       "files": ["**/*.css", "**/*.html", "**/*.scss", "**/*.sass"],
