@@ -1,14 +1,13 @@
 {
   "name": "landing_template",
+  "homepage": "https://maksym-nemera.github.io/landing_template/",
   "source": "src/index.html",
-  "homepage": "/dist/",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel --public-url /dist/",
+    "build": "parcel build src/index.html --public-url .",
     "deploy": "gh-pages -d dist",
     "deploy:force": "gh-pages -d dist -f",
     "lint": "eslint src/scripts/**/*.js --ignore-path .gitignore",
