@@ -132,13 +132,13 @@
     &-icon {
       height: 24px;
       width: 24px;
-      // background-image: url(/images/Icon-cookie.png);
+      background-image: url(../images/Icon-cookie.png);
 
       transition: background-image $transition-duration;
     }
 
     &:hover &-icon {
-      // background-image: url(/images/Icon-cookie-white.png);
+      background-image: url(../images/Icon-cookie-white.png);
 
       transition: background-image $transition-duration;
     }
