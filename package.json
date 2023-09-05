@@ -1,0 +1,42 @@
+{
+  "name": "landing_template",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "npx parcel src/index.html",
+    "lint": "eslint src/scripts/**/*.js --ignore-path .gitignore",
+    "style": "stylelint src/styles/**/*.scss",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "fix-style": "npm run format && npm run style && npm run lint -- --fix",
+    "prepare": "husky install"
+  },
+  "author": "Maksym Nemera",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.5",
+    "@parcel/transformer-sass": "^2.9.3",
+    "eslint": "^8.48.0",
+    "eslint-plugin-html": "^7.1.0",
+    "gh-pages": "^6.0.0",
+    "lint-staged": "^14.0.1",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.3",
+    "sass": "^1.66.1",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recommended-scss": "^13.0.0",
+    "stylelint-scss": "^5.1.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "micromodal": "^0.4.10"
+  },
+  "lint-staged": {
+    "*.{js,css,scss,html}": "npm run format",
+    "*.{js,jsx}": "npm run lint",
+    "*.{css,scss}": "npm run style"
+  }
+}
