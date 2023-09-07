@@ -21,7 +21,7 @@ You may try it on this page: [CLICK ME](https://maksym-nemera.github.io/<your-re
 ---
 
 <details>
-<summary><a id="how-to-use-template">**How to use [template](https://github.com/maksym-nemera/landing_template):**</a></summary>
+<summary><a id="how-to-use-template">How to use <a href="https://github.com/maksym-nemera/landing_template">template:</a></a></summary>
 
 This [repository](https://github.com/maksym-nemera/landing_template) contains the template code and assets for the **Landing Page** projects.
 
