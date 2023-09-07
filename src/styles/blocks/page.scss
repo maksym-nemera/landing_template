@@ -2,35 +2,17 @@
   background-color: $light-blue;
   scroll-behavior: smooth;
 
-  &__body {
-    &--with-menu {
-      overflow: hidden;
-    }
-
-    @include onDesktop {
-      position: relative;
-    }
-  }
-
   &__menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
 
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
     transition: transform $transition-duration;
 
     &:target {
       transform: translateY(50px);
-    }
-
-    @include onDesktop {
-      position: absolute;
-      top: 0;
-
-      transform: translateY(0);
-      transition: none;
     }
   }
 
