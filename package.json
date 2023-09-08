@@ -18,7 +18,7 @@
     "prepare": "husky install"
   },
   "author": "Maksym Nemera",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@linthtml/linthtml": "^0.9.5",
     "@parcel/transformer-sass": "^2.9.3",
